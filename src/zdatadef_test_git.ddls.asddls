@@ -3,7 +3,7 @@
 @AbapCatalog.preserveKey: true
 @AccessControl.authorizationCheck: #CHECK
 @EndUserText.label: 'Data definition for testing'
-define view ZDATADEF_TEST_GIT as select from ztabletest_git {
+define root view ZDATADEF_TEST_GIT as select from ztabletest_git {
          key booking              as Booking,
          @Search.defaultSearchElement: true
          customername         as CustomerName,
