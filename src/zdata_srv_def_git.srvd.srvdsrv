@@ -1,0 +1,4 @@
+@EndUserText.label: 'ZDATA_SRV_DEF_GIT'
+define service ZDATA_SRV_DEF_GIT {
+  expose ZDATADEF_TEST_GIT as Booking;
+}
