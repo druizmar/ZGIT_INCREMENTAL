@@ -1,0 +1,12 @@
+managed; // implementation in class zbp_datadef_test_git unique;
+
+define behavior for ZDATADEF_TEST_GIT alias Booking
+persistent table ZTABLETEST_GIT
+lock master
+//authorization master ( instance )
+etag master LastChangedAt
+{
+  create;
+  update;
+  delete;
+}
